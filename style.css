@@ -66,7 +66,7 @@ main {
 
 /* interests section styles */
 #interests {
-  border: 4px silver ridge;
+  border: 4px rgb(0, 0, 0) ridge;
   padding: 8px;
   margin-top: 20px;
   min-width: 0px;
@@ -74,6 +74,12 @@ main {
 /* fav bands section styles */
 #bands {
   padding: 10px;
+}
+#bands-div {
+  border: 4px rgb(0, 0, 0) ridge;
+  position: absolute;
+  left: 380px;
+  bottom: 100px
 }
 
 h2,
