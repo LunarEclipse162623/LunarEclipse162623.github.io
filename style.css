@@ -70,6 +70,8 @@ main {
   padding: 8px;
   margin-top: 20px;
   min-width: 0px;
+  position: relative;
+  bottom: 150px
 }
 /* fav bands section styles */
 #bands {
@@ -79,7 +81,7 @@ main {
   border: 4px rgb(0, 0, 0) ridge;
   position: absolute;
   left: 380px;
-  bottom: 100px
+  bottom: 100px;
 }
 
 h2,
@@ -161,4 +163,15 @@ h3 {
     align-content: center;
     justify-content: center;
   }
+}
+#RPM-div {
+  position: relative;
+  left: 200px;
+  top: 70px;
+}
+#RPM-img {
+  width: 150px;
+  position: relative;
+  left: 70px;
+  bottom: 10px;
 }
