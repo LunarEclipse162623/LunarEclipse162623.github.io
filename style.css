@@ -79,9 +79,8 @@ main {
 }
 #bands-div {
   border: 4px rgb(0, 0, 0) ridge;
-  position: absolute;
-  left: 380px;
-  bottom: 100px;
+  position: relative;
+  left: 5px;
 }
 
 h2,
