@@ -15,7 +15,18 @@ $(function () {
       //start game
       setInterval(main, 1000 / frameRate);
     }
-
+    var gamemode;
+    var text = "Easy or Hard?";
+    function chooseGamemode() {
+      gamemode = prompt(text);
+      gamemode = gamemode.toLocaleLowerCase();
+      console.log(gamemode);
+      if (!(gamemode === "easy" || gamemode === "hard")) {
+        text = "Try again. Easy or Hard?";
+        chooseGamemode();
+      }
+    }
+    chooseGamemode();
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "black"); // bottom wall
@@ -47,11 +58,13 @@ $(function () {
     createCollectable(collectableType, 380, 350);
     createCollectable(collectableType, 125, 250);
     // TODO 4 - Create Cannons
-    createCannon("right", 300, 1750);
-    createCannon("right", 450, 1500);
-    createCannon("left", 450, 1250);
-    createCannon("top", 125, 1000);
-    createCannon("top", 775, 800);
+    if (gamemode === "hard") {
+      createCannon("right", 300, 1750);
+      createCannon("top", 125, 1000);
+      createCannon("top", 775, 800);
+      createCannon("right", 450, 1500);
+      createCannon("left", 450, 1250);
+    }
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////

@@ -357,6 +357,7 @@ function projectileCollision() {
       projectiles[i].y + projectiles[i].height > player.y
     ) {
       currentAnimationType = animationTypes.frontDeath;
+      player.onGround = true;
       frameIndex = 0;
     }
   }
