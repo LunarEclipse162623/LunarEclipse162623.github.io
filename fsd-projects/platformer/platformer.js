@@ -52,11 +52,11 @@ $(function () {
 
     // TODO 3 - Create Collectables
     var collectableType = "database";
-    createCollectable(collectableType, 575, 500);
+    createCollectable("steve", 575, 500);
     createCollectable(collectableType, 875, 400);
     createCollectable(collectableType, 1175, 300);
     createCollectable(collectableType, 380, 350);
-    createCollectable(collectableType, 125, 250);
+    createCollectable("max", 125, 250);
     // TODO 4 - Create Cannons
     if (gamemode === "hard") {
       createCannon("right", 300, 1750);
