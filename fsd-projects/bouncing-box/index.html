@@ -49,11 +49,11 @@
         // Every time the box is clicked, call the handleBoxClick Function (see below)
         window.addEventListener("click", function () {
           clicks++;
-          box.on("click", handleBoxClick);
-		  if (clicks === 10) {
-			endGame()
-		  }
+          if (clicks === 10) {
+            endGame();
+          }
         });
+        box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
         function moveBoxTo(newPositionX, newPositionY) {
@@ -134,7 +134,7 @@
         }
         function endGame() {
           clearInterval(interval);
-		  alert("You lost! Reload to try again.")
+          alert("You lost! Reload to try again.");
         }
       })();
     </script>
