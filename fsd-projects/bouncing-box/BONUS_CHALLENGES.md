@@ -7,6 +7,7 @@ Congratulations on completing your second game! Here are some optional challenge
 - Use the [background-image](http://www.w3schools.com/cssref/pr_background-image.asp) CSS property to add an image to your box or background.
 
 <!-- 3 line breaks between challenges -->
+
 <br><br><br>
 
 ### Challenge 2: Can You Move the Box Up and Down?
@@ -44,6 +45,7 @@ Congratulations on completing your second game! Here are some optional challenge
   - You’ll need a few more changes to make the vertical movement behave like the horizontal movement. Can you figure it out on your own?
 
 <!-- 3 line breaks between challenges -->
+
 <br><br><br>
 
 ### Challenge 3: Can You Make the Box Start at a Random Location on Every Click?
@@ -59,6 +61,7 @@ Congratulations on completing your second game! Here are some optional challenge
 - Once you generate a random number, where would you use it to set a new, random x-position each time the box is clicked?
 
 <!-- 3 line breaks between challenges -->
+
 <br><br><br>
 
 ### Challenge 4: Can You Make the Box Change Color with Each Click? How About Every 3 Clicks?
@@ -85,6 +88,7 @@ box.css("background-color", colorStr);
 - Once you’ve written `getRandomColor()`, call it in `handleBoxClick` and pass the returned `colorStr` to `box.css` to update the `background-color` each time the box is clicked.
 
 <!-- 3 line breaks between challenges -->
+
 <br><br><br>
 
 ### Challenge 5: Can You Make the Amount that the Box Speeds Up Increase Every 3 Clicks?
@@ -92,6 +96,7 @@ box.css("background-color", colorStr);
 - Think about how you could use an `if` statement to check if the number of clicks (or `points`) is a multiple of 3. What could you use to increase `speed` every time this condition is met?
 
 <!-- 3 line breaks between challenges -->
+
 <br><br><br>
 
 ### Challenge 6: Can You Make the Game End if You Mis-click 10 Times?
